@@ -51,7 +51,7 @@ gulp.task('css-libs', function () {
 /*  сборка, сжатие и минификация скриптов   */
 gulp.task('scripts', function () {
     return gulp.src([ // Берем все необходимые библиотеки
-
+    'app/js/vendor/modernizr-2.8.3.min.js'
     ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
